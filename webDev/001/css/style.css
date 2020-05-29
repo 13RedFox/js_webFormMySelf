@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+input:focus {
+    border-color: red;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 15px 0;
+}
+
+.wrap {
+    width: 500px;
+    min-height: 300px;
+    background-color: silver;
+    border: 1px solid royalblue;
+    border-radius: 20px;
+    box-shadow: 0 0 10px royalblue;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.lesson__title {
+    text-align: center;
+    font-size: 18px;
+    color: #3e637a;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 60px;
+    height: 40px;
+    color: #ffd021;
+    background-color: #1d2122;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: #ffd021;
+    color: #1d2122;
+}
+
+.btn:active {
+    background-color: red;
+    color: #fff;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+    opacity: 0;
+}
+
+.modal__title {
+    font-size: 18px;
+    color: #3e637a;
+    text-align: center;
+}
