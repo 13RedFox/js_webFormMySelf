@@ -51,3 +51,8 @@ function checkNum() {
 
 // !      Lesson #5:
 // TODO:  DOM. Вывод на страницу
+document.querySelector('#text').innerHTML = 'Bye!'
+document.querySelector('.one span').innerHTML = 9999;
+
+// !      Lesson #6:
+// TODO:  DOM. Получение данных
