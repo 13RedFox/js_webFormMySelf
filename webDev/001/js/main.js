@@ -56,3 +56,30 @@ document.querySelector('.one span').innerHTML = 9999;
 
 // !      Lesson #6:
 // TODO:  DOM. Получение данных
+document.querySelector('.data__push').onclick = function () {
+  // * Получение данных с input type = text
+  console.log(document.querySelector('.data__input').value);
+  // * Получение данных с input type = password
+  console.log(document.querySelector('.data__passInput').value);
+  // * Получение данных с input type = range
+  console.log(document.querySelector('.data__rangeInput').value);
+  // * Получение данных с input type = data
+  console.log(document.querySelector('.data__calendarInput').value);
+  // * Получение данных с input type = color
+  console.log(document.querySelector('.data__colorInput').value);
+  // * Получение данных с input type = checkbox
+  console.log(document.querySelector('#data__checkboxInput').checked);
+  if (document.querySelector('#data__checkboxInput').checked) {
+    console.log('Yessss!')
+  } else {
+    console.log('Nooooo!')
+  }
+};
+
+// !      Lesson #7:
+// TODO:  DOM. Получение данных
+document.querySelector('.array__push').onclick = function () {
+  // * Получение данных с input = radio
+  let radio = document.querySelectorAll('.data__radioInput');
+  console.log(radio);
+}
