@@ -136,7 +136,7 @@
 
 // btnTwo.onclick = (event) => {
 //   event.preventDefault();
-  
+
 //   let form = document.querySelector('form');
 //   console.log(form);
 //   console.log(form.elements.three.value);
@@ -144,3 +144,81 @@
 // };
 
 // ! #5 Циклы в JavaScript (часть 1)
+
+// const div = document.querySelectorAll('.one');
+// console.log(div);
+//
+// for (let i = 0; i < div.length; i++) {
+//   div[i].style.backgroundColor = 'pink';
+//   div[i].onclick = two;
+// }
+//
+// function two() {
+//   console.log('work!!!');
+// }
+//
+// let b = document.getElementsByClassName('one');
+// console.log(b);
+//
+// const btn = document.querySelector('button');
+//
+// btn.onclick = () => {
+//   let r = document.querySelectorAll('input[type="radio"]');
+//   console.log(r);
+//
+//   for (let i = 0; i < r.length; i++) {
+//     if (r[i].checked) {
+//       console.log(r[i].value);
+//     }
+//   }
+// };
+
+// TODO => Task 1
+// TODO => Кнопка b-1 запускает функцию t1. Функция должна выводить в out-1 строку вида:
+// TODO => 1 2 3 4 5 6 7 8 9 ... 49 50
+// TODO => от 1 до 50 включительно. Разделитель - пробел. Задача решается с помощью цикла.
+
+// TODO => Task 2
+// TODO => Кнопка b-2 запускает функцию t2. Функция должна выводить в out-2 строку вида:
+// TODO => 2 4 6 ... 122
+// TODO => от 2 до 122 c шагом 2. Разделитель - пробел. Задача решается с помощью цикла.
+
+// TODO => Task 3
+// TODO => Кнопка b-3 запускает функцию t3. Функция должна выводить в out-3 строку вида:
+// TODO => 25 24 23 22 . . 7
+// TODO => от 25 до 7 c шагом 1. Разделитель - пробел. Задача решается с помощью цикла.
+/*
+const b1   = document.querySelector('.b-1'),
+      b2   = document.querySelector('.b-2'),
+      b3   = document.querySelector('.b-3'),
+      out1 = document.querySelector('.out-1'),
+      out2 = document.querySelector('.out-2'),
+      out3 = document.querySelector('.out-3');
+
+let out = '';
+
+b1.onclick = function t1() {
+  for (let i = 0; i <= 50; i++) {
+    out += i + ' ';
+  }
+  out1.innerHTML = out;
+};
+
+b2.onclick = function t2() {
+  for (let i = 2; i <= 122; i+=2) {
+    out += i + ' ';
+  }
+  out2.innerHTML = out;
+};
+
+b3.onclick = function t3() {
+  for (let i = 25; i > 0; i--) {
+    if (i === 6) {
+      break;
+    }
+    out += i + ' ';
+  }
+  console.log(out);
+  out3.innerHTML = out;
+};
+*/
