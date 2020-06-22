@@ -1,0 +1,27 @@
+.one {
+    background: burlywood;
+}
+
+.two {
+    background: orange;
+}
+
+.three {
+    border: 2px solid royalblue;
+}
+
+.out-1,
+.out-2,
+.out-3 {
+    width: 30px;
+    height: 30px;
+    background: deeppink;
+}
+
+.bg-2 {
+    background: orange;
+}
+
+.bg-3 {
+    background: red;
+}

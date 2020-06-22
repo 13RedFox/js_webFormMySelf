@@ -364,3 +364,232 @@ for (let i = 1; i <= 10; i++) {
 // };
 
 // ! #9 Работаем с DOM
+
+// const one = document.querySelector('.one'),
+//       toggle = document.querySelector('.toggle');
+//
+// one.style.width = '150px';
+// one.style.paddingBottom = '40px';
+//
+// // console.log(one.style);
+// one.classList.add('two', 'three');
+// one.classList.remove('two');
+//
+// toggle.onclick = function() {
+//   this.classList.toggle('two');
+// };
+
+// * Атрибуты
+// console.log(one.getAttribute('data'));
+//
+// let gas = document.querySelectorAll('.gas');
+// for (let i = 0; i < gas.length; i++) {
+//   gas[i].onclick = function() {
+//     let gallons = document.querySelector('.gallons').value;
+//     let amount = this.getAttribute('data');
+//     console.log(gallons * amount);
+//   };
+// }
+//
+// let a = document.createElement('div');
+// a.textContent = 'Hello';
+// a.classList.add('two');
+//
+// document.querySelector('.test').appendChild(a);
+//
+// console.log(a);
+
+// TODO => Task 1.
+// TODO => Добавьте кнопку .b-1, которая запускает функцию f1. Функция присваивает блоку .out-1 ширину 200px,
+// TODO => высоту 40px.
+
+// TODO => Task 2.
+// TODO => По нажатию кнопки b-2 запускайте функцию f2, которая присваивает блоку out-2 класс .bg-2.
+
+// TODO => Task 3.
+// TODO => По нажатию кнопки b-3 запускайте функцию f3, которая удаляет у блока out-3 класс .bg-3
+
+// const btn1 = document.querySelector('.b-1'),
+//       btn2 = document.querySelector('.b-2'),
+//       btn3 = document.querySelector('.b-3'),
+//       out1 = document.querySelector('.out-1'),
+//       out2 = document.querySelector('.out-2'),
+//       out3 = document.querySelector('.out-3');
+
+// btn1.onclick = function f1() {
+//   out1.style.width = '200px';
+//   out1.style.height = '40px';
+// };
+//
+// btn2.onclick = function f2() {
+//   out2.classList.add('bg-2');
+// };
+//
+// btn3.onclick = function f3() {
+//   out3.classList.remove('bg-3');
+// };
+
+// ! #10 Массивы в JavaScript
+
+// let a = 'Ivan';
+// let b = 37;
+// let z37 = 'Oven';
+// let c = ['Oven', 1, 1, 19];
+// let man = ['Ivan', 'Ivanov', 'male', 176, 93];
+// console.log(c);
+// console.log(man);
+// man[0] = 'Serhii';
+// console.log(man);
+
+// let a = [1,2,3,4,5];
+// console.log(a);
+//
+// let t = a[0];
+// a[0] = a[a.length - 1];
+// a[a.length - 1] = t;
+// console.log(a);
+//
+// let out = '';
+// for (let i = 0; i < a.length; i++) {
+//   if (a[i] % 2 === 0) {
+//     out += a[i] + ' ';
+//   }
+// }
+// document.querySelector('.out').innerHTML = out;
+//
+// let b = [3, 5, 2, 6, 9, 4, 8, 1, 7];
+//
+// let max = b[0];
+// for (let i = 0; i < b.length; i++) {
+//   if (b[i] > max) {
+//     max = b[i];
+//   }
+// }
+// console.log('max: ' + max);
+//
+// let sum = 0;
+// for (let i = 0; i < b.length; i++) {
+//   sum += b[i];
+// }
+// console.log('sum: ' + sum);
+
+// TODO => Task 1.
+// TODO => Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию
+// TODO => кнопки b-1.
+
+// TODO => Task 2.
+// TODO => Создайте массив ar2 содержащий строки, числа, булевы значения. Выведите его в div.out-2. Используйте шаблон
+// TODO => вывода из кода в JS. Вывод - по нажатию кнопки b-2.
+
+// TODO => Task 6.
+// TODO => Создайте массив ar6, который содержит ваше имя, знак зодиака, день рождения и месяц рождения. Выведите
+// TODO => массив на страницу в div-6. Разделитель - пробел.
+
+// const b1 = document.querySelector('.b-1'),
+//       b2 = document.querySelector('.b-2');
+//
+// const arr1 = ['One', 'Two', 'TWEEN', 3, 5, 9, false, 13, true];
+// const arr6 = ['Serhii', 'Libra', 18, 10,];
+//
+// b1.onclick = () => {
+//   let out = document.querySelector('.out-1');
+//   for (let i = 0; i < arr1.length; i++) {
+//     out.innerHTML += arr1[i];
+//   }
+// };
+//
+// b2.onclick = () => {
+//   let out = document.querySelector('.out-2');
+//   for (let i = 0; i < arr6.length; i++) {
+//     out.innerHTML += arr6[i] + ' ';
+//     console.log(arr6[i]);
+//   }
+// };
+
+// ! #11 Добавление и удаление элементов в массиве, pop, push,splice
+
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const b = ['a', 'b', 'c', 'd', 'e'];
+//
+// console.log(a.length);
+// console.log(a.push(10,13,44,55,66));
+// console.log(a);
+// console.log(b.push('f', 'g'));
+// console.log(b);
+//
+// b.pop();
+// console.log(b);
+//
+// a.splice(3,3, 'hi');
+// console.log(a);
+
+// TODO => Task 1.
+// TODO => Есть массив d1, кнопка b-1, input i-1. Напишите функцию f1, которая при нажатии читает i-1 и добавляем его
+// TODO => в массив. После чего выводит массив в .out-1. Поскольку мы будем выводить массив d1 неоднократно, то давайте
+// TODO => вывод массива сделаем отдельной функцией, showArr - она подготовлена. Изучите ее - это хороший способ
+// TODO => оптимизировать код.
+
+// const b1 = document.querySelector('.b-1'),
+//       input = document.querySelector('.i-1'),
+//       out = document.querySelector('.out-1');
+//
+// const d1 = [33,'best', 66, 'best'];
+// b1.onclick = function f1() {
+//   let inputValue = input.value;
+//   d1.push(inputValue);
+//   out.innerHTML += d1;
+// };
+
+// ! #12 Двумерные массивы
+
+// let a = [4, 5, 6, 7];
+// let b = [
+//   [1,2,3],
+//   [4,5,6],
+//   [7,8,9],
+// ];
+//
+// console.log(b);
+
+// for (let i = 0; i < b.length; i++) {
+//   // console.log(b[i]);
+//   let c = b[i];
+//   for (let k = 0; k < c.length; k++) {
+//     console.log(c[k]);
+//   }
+// }
+// let out = '';
+
+// for (let i = 0; i < b.length; i++) {
+//   for (let k = 0; k < b[i].length; k++) {
+//     // console.log(b[i][k]);
+//     out += b[i][k] + ' ';
+//   }
+//   out += '<br>';
+// }
+// document.querySelector('.out').innerHTML = out;
+//
+// for (let i = 0; i < b.length; i++) {
+//   for (let k = 0; k < b[i].length; k++) {
+//     if (b[i][k] > 4) {
+//       out += b[i][k] + ' ';
+//     }
+//   }
+//   out += '<br>';
+// }
+//
+// console.log(out);
+
+// let d = [ 1,0,0,0,0,0];
+// let k = 0;
+//
+// document.querySelector('button').onclick = () => {
+//   if (k + 1 < 6) {
+//     d[k] = 0;
+//     d[k + 1] = 1;
+//     k++;
+//   }
+//   document.querySelector('.out2').innerHTML = d;
+// };
+
+// ! #13 Ассоциативный массив (объект) в JavaScript
