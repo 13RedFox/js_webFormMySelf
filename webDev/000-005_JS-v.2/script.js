@@ -64,7 +64,8 @@
 //       break;
 // }
 
-// TODO => При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат сравнения - true или false выведите в out-1.
+// TODO => При нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать содержимое i-1 и сравнить его с
+// TODO => числом 4 (сравнение ==). Результат сравнения - true или false выведите в out-1.
 
 // btn.onclick = function f1() {
 //   let input = +inputAge.value;
@@ -76,7 +77,9 @@
 //   }
 // };
 
-// TODO => Даны две переменные a21 и a22. При нажатии кнопки b-2, запускается функция f2. Функция должна сравнить переменные с помощью if else и вывести в out-2 число, которое больше. Вариант равенства переменных не рассматриваем.
+// TODO => Даны две переменные a21 и a22. При нажатии кнопки b-2, запускается функция f2. Функция должна сравнить
+// TODO => переменные с помощью if else и вывести в out-2 число, которое больше. Вариант равенства переменных
+// TODO => не рассматриваем.
 
 // const a21 = 13,
 //       a22 = 9;
@@ -89,7 +92,9 @@
 //   }
 // };
 
-// TODO => Даны 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки b-3 срабатывает функция f3. Функция должна вычитать содержимое i-31 и i-32 в переменные и сравнить их, вывести в out-3 большее число. Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
+// TODO => Даны 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки b-3 срабатывает функция f3.
+// TODO => Функция должна вычитать содержимое i-31 и i-32 в переменные и сравнить их, вывести в out-3 большее число.
+// TODO => Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
 // let num1 = document.querySelector('.num1'),
 //     num2 = document.querySelector('.num2');
@@ -293,3 +298,69 @@ for (let i = 1; i <= 10; i++) {
 // }
 
 // ! #7 Функции и все о них
+
+// const f1 = document.querySelector('.f-1'),
+//       out = document.querySelector('.out');
+//
+// function one() {
+//   console.log('work!');
+// }
+//
+// one();
+//
+// f1.onclick = one;
+//
+// function two() {
+//   console.log('work 123');
+//   return 54;
+// }
+//
+// function multi(x, y) {
+//   return x * y;
+// }
+//
+// console.log(multi(2, 3));
+// console.log(multi(4, 23));
+// console.log(multi(43, 52));
+
+// TODO => Task 1, Task 2, Task 3.
+// TODO => Напишите функцию t1, которая при нажатии кнопки выводит в out-1 переменную a1.
+
+// const one = document.querySelector('.one'),
+//       two = document.querySelector('.two'),
+//       t31 = document.querySelector('.t3-1'),
+//       t32 = document.querySelector('.t3-2'),
+//       out = document.querySelector('.out'),
+//       out1 = document.querySelector('.out1'),
+//       out21 = document.querySelector('.out2-1'),
+//       out22 = document.querySelector('.out2-2'),
+//       a1 = 8,
+//       a2 = 8;
+//
+// function t1() {
+//   out.innerHTML = a1;
+// }
+//
+// one.onclick = t1;
+//
+// function t2() {
+//   return a2;
+// }
+//
+// two.onclick = () => {
+//   out1.innerHTML = t2();
+// };
+//
+// function t3(a, b) {
+//   return a + b;
+// }
+//
+// t31.onclick = () => {
+//   out21.innerHTML = t3(3, 4);
+// };
+//
+// t32.onclick = () => {
+//   out22.innerHTML = t3(5, 6);
+// };
+
+// ! #9 Работаем с DOM
