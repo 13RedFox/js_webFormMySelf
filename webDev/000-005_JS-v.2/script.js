@@ -612,3 +612,25 @@ for (let i = 1; i <= 10; i++) {
 // document.querySelector('.out').innerHTML = out;
 
 // ! #15 Set в JavaScript
+
+// let a = new Set();
+// a.add(1);
+// a.add(2);
+// console.log(a);
+//
+// for (let item of a) {
+//   console.log(item);
+// }
+
+// let arr = [1,2,3,4,6,8,22,3,5,8,4,5,2,1,21];
+// let b = new Set(arr);
+// console.log(b);
+//
+// let bArr = Array.from(b);
+// console.log(bArr);
+
+// for (let item of arr) {
+//   console.log(item);
+// }
+
+// ! #16 Перебор массивов: for, for in, for of
