@@ -593,3 +593,22 @@ for (let i = 1; i <= 10; i++) {
 // };
 
 // ! #13 Ассоциативный массив (объект) в JavaScript
+
+// const a = {
+//   a: 5,
+//   b: 'Hello',
+//   z: 'Hi',
+//   y: 1999
+// };
+//
+// console.log(a);
+// console.log(a.z);
+//
+// let out = '';
+//
+// for (let key in a) {
+//   out += a[key] + ' ';
+// }
+// document.querySelector('.out').innerHTML = out;
+
+// ! #15 Set в JavaScript
